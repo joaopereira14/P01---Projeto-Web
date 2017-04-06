@@ -68,7 +68,6 @@ li {
     padding: 20px;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 8% 75%, 0 83%, 0 75%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 8% 75%, 0 83%, 0 75%);
-    
 }
 
 
@@ -78,12 +77,9 @@ li {
 }
 
 .ativo {
-    transform: rotateY(0) translateZ(182px);
+    transform: translateZ(182px);
     z-index: 999;
-    
-
 }
-
 
 .bullet {
     position: relative;
@@ -108,7 +104,6 @@ li {
     animation-name: moveOne;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-
 }
 
 .movegeral2 {
@@ -153,6 +148,31 @@ li {
 @keyframes movebul {
     0%    {bottom:50px; opacity: 0;}
     100%   {bottom:0px; opacity: 1;}
+}
+
+.animClick {
+    animation-name: animacaoclick;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.animClickReverse {
+    animation-name: animacaoclick;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes animacaoclick {
+    0%    {
+        transform: scale(0.8);
+    }
+    50%   {
+        transform: scale(1.1);
+    }
+    100%   {
+        transform: scale(1);
+    }
 }
 
 
