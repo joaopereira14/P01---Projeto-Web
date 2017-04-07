@@ -24,4 +24,7 @@ $(".cardgeral li").on("click", function(event){
     $("#slider-switcher li").removeClass('active');
     $('[data-slide="'+bullet+'"]').addClass('active');
     
+    $('.cardgeral li').removeClass('animClick movegeral1 movegeral2 movegeral3');
+    $('#'+bullet).addClass('animClick');
+    
 });
